@@ -1,0 +1,22 @@
+html{text-align: center;}
+  
+
+body {
+    background-color: #05041f ; 
+    font-family: Arial, Helvetica, sans-serif;
+      font-weight: var(--font-weight-regular);; 
+    color: deeppink;
+  font-size: larger;
+}
+a{
+  color: rebeccapurple;
+  
+}
+
+p{font-weight: var(--font-weight-regular);; 
+  font-size: medium ;}
+
+
+body{text-align:center ;}
+
+p{text-align: center;}
