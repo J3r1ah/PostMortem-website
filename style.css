@@ -1,5 +1,5 @@
 html{text-align: center;}
-  
+  /* this alighns all text and images to thw center */
 
 body {
     background-color: #05041f ; 
@@ -8,15 +8,29 @@ body {
     color: deeppink;
   font-size: larger;
 }
+/* this alters the font, font size, and colors of the. font */
 a{
   color: lightcyan;
   
 }
+/*using an anchor fuction im able to change the color of the hyper links   */
 
 p{font-weight: var(--font-weight-regular);; 
   font-size: medium ;}
+/* this alters font size and weight */
 
 
 body{text-align:center ;}
 
 p{text-align: center;}
+/* this aligns specified texts to th center  */
+
+#myLink {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color:#e803a7fb;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
