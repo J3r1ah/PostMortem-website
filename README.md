@@ -17,4 +17,6 @@ currently its. in beta due to my current inability and knowlege on how to make w
 # Link to the website below!
 
 https://c5cbe2b4-60fe-4ec3-b660-cc4f91b1396f-00-3bpipiwpfgs5k.worf.replit.dev/index.html
+
+# Direct Server Link Constant Updates
 http://127.0.0.1:3000/index.html
