@@ -16,4 +16,6 @@ currently its. in beta due to my current inability and knowlege on how to make w
 
 # Link to the website below!
 
+https://j3r1ah.github.io/PostMortem-FGC-Website/
+
 
