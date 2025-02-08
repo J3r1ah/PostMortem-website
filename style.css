@@ -113,7 +113,7 @@ p{text-align: center;}
   width: 100%;
   max-width: 500px;
   margin: 20px auto;
-  border: 8px solid #3498db;
+  border: 8px solid greenyellow;
   border-radius: 15px;
   box-shadow: 0 0 20px rgba(52, 152, 219, 0.5);
   overflow: hidden;
@@ -281,10 +281,10 @@ p{text-align: center;}
 .image-container {
   max-width: 100%;
   margin: 20px auto;
-  border: 8px solid #1abc9c;
+  border: 8px solid greenyellow;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 0 20px rgba(26, 188, 156, 0.6);
+  box-shadow: 0 0 20px greenyellow;
   transition: all 0.3s ease;
 }
 
@@ -292,7 +292,7 @@ p{text-align: center;}
 
 .image-container:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 30px rgba(26, 188, 156, 0.8);
+  box-shadow: 0 0 30px greenyellow;
 }
 
 .image-container img {
