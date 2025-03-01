@@ -348,3 +348,59 @@ p{text-align: center;}
   }
 }
 /* all of these lines is just me messing with css to see whaat color i ant the borders to be im bored  */
+
+
+
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4; /* Light background for contrast */
+}
+
+/* Navbar container */
+#navsticky {
+  position: sticky;
+  top: 0; /* Sticks to the top of the viewport */
+  z-index: 1000; /* Ensures it stays above other content */
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #7fffd4; /* Aquamarine background */
+  box-shadow: 0px 4px 15px rgba(127, 255, 212, 0.6); /* Glow effect */
+  padding: 10px 20px;
+}
+
+/* Navbar links container */
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+/* Navbar links */
+.nav-links li a {
+  text-decoration: none;
+  color: #004d40; /* Dark teal for contrast */
+  font-weight: bold;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect on links */
+.nav-links li a:hover {
+  color: white; /* Changes text color on hover */
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8); /* Glow effect on hover */
+}
+
+/* Optional spacing for page content */
+body > *:not(#navsticky) {
+  padding-top: 60px; /* Avoid overlap with sticky navbar */
+}
+
