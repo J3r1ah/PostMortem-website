@@ -358,10 +358,6 @@ p{text-align: center;}
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4; /* Light background for contrast */
-}
 
 /* Navbar container */
 #navsticky {
