@@ -354,44 +354,174 @@ p{text-align: center;}
 
 
 
-/* Navbar container */
+li {
+  display: inline-block;
+}
+
+nav {
+  font-family: 'Slim Jim', 'Impact', 'Arial Black', sans-serif;
+  background: rgb(246, 193, 247);
+}
+li {
+  display: inline-block;
+  border-left: 1px solid rgb(84, 159, 136); /* neither is this */
+  &:first-child {
+    border-left: none;
+  }
+}
+a {
+  color: rgb(252, 234, 166);
+  text-decoration: none;
+  &:hover {
+    border-bottom: 2px solid rgb(64, 239, 125);
+  }
+}
+
+nav {
+  background-color: #051332; /* Light pink background */
+  padding: 10px;
+  border-radius: 20px; /* Rounded corners for a softer look */
+  box-shadow: 0 4px 6px rgba(9, 222, 183, 0.1); /* Subtle shadow for depth */
+  width: fit-content; /* Adjust width to content */
+  margin: 20px auto; /* Center the nav */
+}
+
+nav ul {
+  list-style: none; /* Remove bullet points */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Arrange items horizontally */
+  align-items: center; /* Vertically center items */
+}
+
+nav li {
+  margin: 0 15px; /* Space out the list items */
+}
+
+nav a {
+  text-decoration: none; /* Remove underlines */
+  color: #1de2b4; /* Pink text color */
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background-color: #5be9c8; /* White background for the links */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+  background-color: #11c885; /* Pink background on hover */
+  color: #fff; /* White text on hover */
+}
+
 #navsticky {
   position: sticky;
-  top: 0; /* Sticks to the top of the viewport */
-  z-index: 1000; /* Ensures it stays above other content */
-}
-
-/* Navbar styles */
-.navbar {
-  background-color: #7fffd4; /* Aquamarine background */
-  box-shadow: 0px 4px 15px rgba(127, 255, 212, 0.6); /* Glow effect */
+  top: 10px; /* Slight offset from the top */
+  z-index: 1000;
+  width: 95%; /* Slightly less than full width */
+  max-width: 1200px; /* Maximum width for larger screens */
+  margin: 0 auto; /* Center the nav bar */
+  background-color: #090d2f;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 50px; /* Circular edges */
   padding: 10px 20px;
+  transition: all 0.3s ease; 
 }
 
-/* Navbar links container */
-.nav-links {
+#navsticky ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: space-around;
-  list-style-type: none;
+  align-items: center;
 }
 
-/* Navbar links */
-.nav-links li a {
+#navsticky li a {
   text-decoration: none;
-  color: #004d40; /* Dark teal for contrast */
+  color: #d6e8e4;
+  padding: 10px 20px;
+  border-radius: 25px; /* Rounded corners for nav items */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#navsticky li a:hover {
+  background-color: #2bd27e;
+  color: #000;
+}
+
+#myLinky {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #1ee5ff;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: 'Arial', sans-serif;
   font-weight: bold;
-  font-size: 18px;
-  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 6px rgb(37, 77, 83);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
-/* Hover effect on links */
-.nav-links li a:hover {
-  color: white; /* Changes text color on hover */
-  text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8); /* Glow effect on hover */
+#myLinky:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, 
+    transparent, 
+    rgba(255, 255, 255, 0.4) 20%, 
+    rgba(255, 255, 255, 0.6) 40%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(255, 255, 255, 0.4) 60%,
+    transparent 80%
+  );
+  transition: all 0.4s;
 }
 
-/* Optional spacing for page content */
-body > *:not(#navsticky) {
-  padding-top: 60px; /* Avoid overlap with sticky navbar */
+#myLinky:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(28, 231, 207, 0.5);
 }
 
+#myLinky:hover:before {
+  left: 100%;
+  transition: all 0.7s cubic-bezier(0.3, 1, 0.2, 1);
+}
+
+#myLinky:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(18, 35, 33, 0.5);
+}
+
+
+
+#myLinky:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, 
+    transparent 65%, 
+    rgba(255, 255, 255, 0.3) 67%, 
+    transparent 69%,
+    rgba(255, 255, 255, 0.3) 71%,
+    transparent 73%
+  );
+  opacity: 0;
+  animation: lightning 0.5s linear infinite;
+  pointer-events: none;
+}
+
+#myLinky:hover:after {
+  opacity: 1;
+
+}
