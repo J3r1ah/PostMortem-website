@@ -65,7 +65,7 @@ body{text-align:center ;}
 p{text-align: center;}
 /* this aligns specified texts to th center  */
 
-#myLink {
+.myLink {
   display: inline-block;
   padding: 12px 24px;
   background-color: #63edff;
@@ -83,7 +83,7 @@ p{text-align: center;}
   overflow: hidden;
 }
 
-#myLink:before {
+.myLink:before {
   content: '';
   position: absolute;
   top: 0;
@@ -101,17 +101,17 @@ p{text-align: center;}
   transition: all 0.4s;
 }
 
-#myLink:hover {
+.myLink:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 8px rgba(42, 157, 143, 0.5);
 }
 
-#myLink:hover:before {
+.myLink:hover:before {
   left: 100%;
   transition: all 0.7s cubic-bezier(0.3, 1, 0.2, 1);
 }
 
-#myLink:active {
+.myLink:active {
   transform: translateY(1px);
   box-shadow: 0 2px 4px rgba(42, 157, 143, 0.5);
 }
@@ -122,7 +122,7 @@ p{text-align: center;}
   50% { opacity: 0.5; }
 }
 
-#myLink:after {
+.myLink:after {
   content: '';
   position: absolute;
   top: 0;
@@ -141,7 +141,7 @@ p{text-align: center;}
   pointer-events: none;
 }
 
-#myLink:hover:after {
+.myLink:hover:after {
   opacity: 1;
 }
 
@@ -415,39 +415,18 @@ nav a:hover {
 
 #navsticky {
   position: sticky;
-  top: 10px; /* Slight offset from the top */
-  z-index: 1000;
+  top: 0px; 
   width: 95%; /* Slightly less than full width */
   max-width: 1200px; /* Maximum width for larger screens */
   margin: 0 auto; /* Center the nav bar */
   background-color: #090d2f;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  border-radius: 50px; /* Circular edges */
   padding: 10px 20px;
-  transition: all 0.3s ease; 
-}
-
-#navsticky ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-evenly;
+
 }
 
-#navsticky li a {
-  text-decoration: none;
-  color: #d6e8e4;
-  padding: 10px 20px;
-  border-radius: 25px; /* Rounded corners for nav items */
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-#navsticky li a:hover {
-  background-color: #2bd27e;
-  color: #000;
-}
 
 #myLinky {
   display: inline-block;
@@ -524,4 +503,9 @@ nav a:hover {
 #myLinky:hover:after {
   opacity: 1;
 
+}
+
+.doodoo{
+  display: inline-block;
+  padding:16px
 }
